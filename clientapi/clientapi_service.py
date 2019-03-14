@@ -32,7 +32,7 @@ from models.suggestion import Suggestion
 # See: https://github.com/GoogleCloudPlatform/python-docs-samples/blob/6f5f3bcb81779679a24e0964a6c57c0c7deabfac/appengine/standard/firebase/firenotes/backend/main.py#L27
 requests_toolbelt.adapters.appengine.monkeypatch()
 HTTP_REQUEST = google.auth.transport.requests.Request()
-
+HTTP_REQUEST= yahoo.auth.transport.requests.Request()
 
 def get_current_user_id(headers):
     auth = headers.get('Authorization')
